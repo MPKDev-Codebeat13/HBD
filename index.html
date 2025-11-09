@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Meriam and Khalid Sahud 🎉</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/bday.jpg" />
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="title">🎉 Happy Birthday Meriam 🎉</h1>
+      <p class="subtitle">From your friend MPK 💜</p>
+      <img
+        src="assets/images/jennie.jpg"
+        alt="Jennie Kim"
+        class="idol-img"
+        loading="lazy"
+      />
+      <p class="message">
+        Hey Meriam, Happy Birthday! I just wanted to say how much I appreciate
+        having you as a friend. You're always so full of energy and positivity,
+        and you make every day brighter with your smile and your laugh. Remember
+        that time we stayed up late talking about our dreams? You're going to
+        crush it all, just like you always do. Keep being awesome, and know that
+        I'm cheering you on from afar. Love you lots! 💖
+      </p>
+      <button id="showMoreBtn" tabindex="0">💌 Click for a Surprise 💌</button>
+      <div class="hidden" id="hiddenMessage">
+        <p>
+          P.S. Here's a little something extra to make your day even more
+          special. You've got this, superstar! 🎉
+        </p>
+        <img
+          src="assets/images/bts.jpg"
+          alt="BTS"
+          class="idol-img"
+          loading="lazy"
+        />
+        <div class="gallery">
+          <div class="gallery-item" data-caption="Memorable Moments">
+            <img
+              src="assets/images/bday.jpg"
+              alt="Birthday Memory"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <a href="letter.html?name=Meriam" class="letter-link">
+          <button tabindex="0">📖 Read Full Letter 📖</button>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <h1 class="title">🎉 Happy Birthday Khalid 🎉</h1>
+      <p class="subtitle">From your friend MPK 💜</p>
+      <img
+        src="assets/images/eminem.png"
+        alt="eminem"
+        class="idol-img"
+        loading="lazy"
+      />
+      <p class="message">
+        Hey Khalid, Happy Birthday! I just wanted to say how much I appreciate
+        having you as a friend. You're always so full of energy and positivity,
+        and you make every day brighter with your smile and your laugh. Remember
+        that time we stayed up late talking about our dreams? You're going to
+        crush it all, just like you always do. Keep being awesome, and know that
+        I'm cheering you on from afar. Love you lots! 💖
+      </p>
+      <button id="showMoreBtn2" tabindex="0">💌 Click for a Surprise 💌</button>
+      <div class="hidden" id="hiddenMessage2">
+        <p>
+          P.S. Here's a little something extra to make your day even more
+          special. You've got this, superstar! 🎉
+        </p>
+        <img
+          src="assets/images/tupac.png"
+          alt="BTS"
+          class="idol-img"
+          loading="lazy"
+        />
+        <div class="gallery">
+          <div class="gallery-item" data-caption="Memorable Moments">
+            <img
+              src="assets/images/bday.jpg"
+              alt="Birthday Memory"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <a href="letter.html?name=Khalid" class="letter-link">
+          <button tabindex="0">📖 Read Full Letter 📖</button>
+        </a>
+      </div>
+    </div>
+    <!-- Modal for Memorable Moments -->
+    <div id="memorableModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Memorable Moments</h2>
+        <div class="modal-gallery">
+          <img
+            src="assets/images/574912915_802967159244492_965576225125632074_n.jpg"
+            alt="Memorable Moment 1"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/575906371_794607236901583_8986157302002555276_n.jpg"
+            alt="Memorable Moment 2"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/575311371_1191704102816276_3804479894961947413_n.jpg"
+            alt="Memorable Moment 3"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/574952098_1883791065828609_7593082561472446453_n.jpg"
+            alt="Memorable Moment 4"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal for Meriam's Memorable Moments -->
+    <div id="meriamModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="meriamClose">&times;</span>
+        <h2>Memorable Moments</h2>
+        <div class="modal-gallery">
+          <img
+            src="assets/images/574872390_1737943920234208_7497185732611126580_n.jpg"
+            alt="Memorable Moment 1"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/569345199_1554623222133819_1253218862081892534_n.jpg"
+            alt="Memorable Moment 2"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/566475933_839401451796156_6273238550141898909_n.jpg"
+            alt="Memorable Moment 3"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/522022807_24488124064106827_372379638885620174_n.jpg"
+            alt="Memorable Moment 4"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/520319975_515852708258115_8187295195697225793_n.jpg"
+            alt="Memorable Moment 5"
+            loading="lazy"
+          />
+          <img
+            src="assets/images/508408048_1473680296970048_6170587244452784812_n.jpg"
+            alt="Memorable Moment 6"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

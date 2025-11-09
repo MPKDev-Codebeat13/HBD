@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Birthday Letter 🎉</title>
+    <link rel="stylesheet" href="letter.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/bday.jpg" />
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="title" id="birthdayTitle">🎉 Happy Birthday Meriam 🎉</h1>
+      <p class="subtitle">A Special Letter from MPK 💜</p>
+      <div class="letter-content">
+        <p id="dearName">Dear Meriam,</p>
+        <p>
+          Happy Birthday! I hope this day is filled with all the joy and love
+          you deserve. As I sit here thinking about you, I'm reminded of how
+          lucky I am to have a friend like you in my life.
+        </p>
+        <p>
+          You're one of those people who lights up any room you walk into. Your
+          energy is contagious, and your positivity is like a breath of fresh
+          air. Remember that time we stayed up way too late talking about our
+          dreams and aspirations? You have this incredible drive and passion
+          that inspires everyone around you. I know you're going to achieve
+          amazing things – you're already on your way!
+        </p>
+        <p>
+          Your smile could brighten the darkest day, and your laugh is the best
+          sound in the world. You have this unique ability to make people feel
+          valued and appreciated. Whether it's through your creativity, your
+          kindness, or just being yourself, you make the world a better place.
+        </p>
+        <p>
+          On this special day, I want you to know how much you mean to me.
+          You're not just a friend; you're family. I'm so proud of everything
+          you've accomplished and everything you're going to do. Keep chasing
+          your dreams, keep being that amazing person you are, and know that I'm
+          always here cheering you on.
+        </p>
+        <p>
+          May this birthday bring you all the happiness your heart can hold, and
+          may the year ahead be filled with success, love, and unforgettable
+          moments. You deserve it all and more.
+        </p>
+        <p>With all my love and best wishes,</p>
+        <p>MPK 💻💜</p>
+      </div>
+      <a href="index.html" class="back-link">
+        <button tabindex="0">🔙 Back to Surprise</button>
+      </a>
+    </div>
+
+    <!-- Optional background music -->
+    <audio autoplay loop>
+      <source
+        src="./assets/audio/Ultimate KPop Demon Hunters Song Compilation Netflix Family.mp3"
+        type="audio/mp3"
+      />
+      Your browser does not support the audio tag.
+    </audio>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script>
+      // Get the name from URL parameters
+      const urlParams = new URLSearchParams(window.location.search)
+      const name = urlParams.get('name')
+
+      if (name) {
+        document.getElementById(
+          'birthdayTitle'
+        ).textContent = `🎉 Happy Birthday ${name} 🎉`
+        document.getElementById('dearName').textContent = `Dear ${name},`
+      }
+
+      // Set background based on name
+      if (name === 'Khalid') {
+        document.body.style.background = '#000000'
+        document.body.style.setProperty('--pink-bg', 'none')
+        document.body.style.setProperty('--black-bg', 'none')
+        document.body.style.setProperty('background-image', 'none')
+      } else if (name === 'Meriam') {
+        document.body.style.background = '#f9b4d0'
+        document.body.style.setProperty('--pink-bg', 'none')
+        document.body.style.setProperty('--black-bg', 'none')
+        document.body.style.setProperty('background-image', 'none')
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
