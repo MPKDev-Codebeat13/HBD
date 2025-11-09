@@ -84,6 +84,19 @@ body::after {
   animation: slideUp 0.8s ease-out;
 }
 
+/* Meriam's card - black text for contrast on pink background */
+.card:first-child {
+  color: black;
+}
+
+.card:first-child .title {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card:first-child .subtitle {
+  color: #333;
+}
+
 @keyframes slideUp {
   from {
     opacity: 0;
