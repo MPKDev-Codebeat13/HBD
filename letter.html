@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="letter.css" />
     <link rel="icon" type="image/x-icon" href="./assets/images/bday.jpg" />
   </head>
-  <body>
+  <body class="meriam-bg">
     <div class="card">
       <h1 class="title" id="birthdayTitle">🎉 Happy Birthday Meriam 🎉</h1>
       <p class="subtitle">A Special Letter from MPK 💜</p>
@@ -75,11 +75,13 @@
 
       // Set background based on name
       if (name === 'Khalid') {
+        document.body.classList.remove('meriam-bg')
         document.body.style.background = '#000000'
         document.body.style.setProperty('--pink-bg', 'none')
         document.body.style.setProperty('--black-bg', 'none')
         document.body.style.setProperty('background-image', 'none')
       } else if (name === 'Meriam') {
+        document.body.classList.add('meriam-bg')
         document.body.style.background = '#f9b4d0'
         document.body.style.setProperty('--pink-bg', 'none')
         document.body.style.setProperty('--black-bg', 'none')
