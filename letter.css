@@ -36,19 +36,19 @@ body {
 }
 
 /* Meriam's letter page - black text for contrast on pink background */
-body:has(.meriam-bg) .card {
+.meriam-bg .card {
   color: black;
 }
 
-body:has(.meriam-bg) .title {
+.meriam-bg .title {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-body:has(.meriam-bg) .subtitle {
+.meriam-bg .subtitle {
   color: #333;
 }
 
-body:has(.meriam-bg) .letter-content {
+.meriam-bg .letter-content {
   color: black;
 }
 
